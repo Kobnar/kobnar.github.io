@@ -10,7 +10,6 @@ defaultcontentlanguage = "en"
 
 paginate = 20
 
-pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
@@ -41,10 +40,14 @@ pygmentscodefencesguesssyntax = true
 
 # Menu links
 [[menu.main]]
-    name = "Blog"
+    name = "Posts"
     weight = 1
     url  = "posts/"
 [[menu.main]]
-    name = "About"
+    name = "References"
     weight = 2
+    url = "references/"
+[[menu.main]]
+    name = "About"
+    weight = 3
     url = "about/"
