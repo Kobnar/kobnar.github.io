@@ -1,116 +1,75 @@
 baseURL = "https://kobnar.github.io/"
 languageCode = "en-us"
-defaultContentLanguage = "en"
 title = "Konrad R.K. Ludwig"
 
 [[module.imports]]
-    path = "github.com/Fastbyte01/KeepIt"
+    path = "github.com/rhazdon/hugo-theme-hello-friend-ng"
 
-paginate = 12
-enableEmoji = true
-enableRobotsTXT = true
-googleAnalytics = ""
+[params]
+    dateform = "Jan 2, 2006"
+    dateformShort = "Jan 2"
+    dateformNum = "2006-01-02"
+    dateformNumTime = "2006-01-02 15:04"
+    math = true
 
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
+    # Home page
+    homeSubtitle = "Data Anlyist // Software Engineer"
 
-[Permalinks]
- posts = "/:year/:month/:filename/"
+    disableReadOtherPosts = false
+    enableSharingButtons = false
 
-[menu]
-  [[menu.main]]
+    # Metadata for document head
+    description = ""
+    keywords = ""
+    images = [""]
+
+    [params.portrait]
+        path = '/images/kobnar_avatar.jpg'
+        alt = ''
+        maxWidth = '20rem'
+
+    [[params.social]]
+        name = 'github'
+        url = 'https://github.com/kobnar/'
+    
+    [[params.social]]
+        name = 'linkedin'
+        url = 'https://linkedin.com/in/konradrkludwig/'
+    
+    [[params.social]]
+        name = 'twitter'
+        url = 'https://twitter.com/kobnar/'
+
+[taxonomies]
+#    category = "posts"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+    [languages.en]
+        title = "Konrad R.K. Ludwig"
+        subtitle = "Data Anlyist // Software Engineer"
+        keywords = ""
+        copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+        readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+        logoText = "kobnar"
+        logoHomeLink = "/"
+
+# And you can even create generic menu
+[[menu.main]]
+    identifier = "posts"
     name = "Posts"
     url = "/posts/"
     weight = 1
-
-  [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
     weight = 2
-
-  [[menu.main]]
+[[menu.main]]
+    identifier = "references"
     name = "References"
     url = "/references/"
     weight = 3
-
-  [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 4
-
-[params]
-    since = 2022
-    author = "Konrad R.K. Ludwig"
-    subtitle = ""
-    cdn_url = ""
-    home_mode = ""
-    dateFormatToUse = ""
-    avatar = "/images/kobnar_avatar.jpg"
-    description = ""
-    keywords = ""
-    license = 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-
-    [author]
-    name = "Fastbyte01"
-
-    [params.publisher]
-        name = "Fastbyte01"
-
-        [params.publisher.logo]
-        url = "logo.png"
-        width = 127
-        height = 40
-
-#    [params.logo]
-#        url = "logo.png"
-#        width = 127
-#        height = 40
-
-#    [params.image]
-#        url = "cover.png"
-#        width = 800
-#        height = 600
-
-    [params.social]
-        GitHub = "kobnar"
-        Twitter = "kobnar"
-        Linkedin = "konradrkludwig"
-        #Instagram = "xxxx"
-        #Email   = "xxxx"
-        #Medium = "xxxx"
-        #Gitlab = "xxxx"
-        #Youtubelegacy = "xxxx"
-        #Youtubecustom = "xxxx"
-        #Youtubechannel = "xxxx"
-        #Keybase = "xxxx"
-        #Codepen = "xxxx"
-        #Bitbucket = "xxxx"
-        #Stackoverflow = "xxxxx"
-        #Paypal = "xxxx"
-        #Patreon = "xxxx"
-        #Angellist = "xxxx"
-        #Googlescholar = "xxxx"
-        #Researchgate = "xxxx"
-
-    [params.share]
-        Twitter = true
-        Linkedin = true
-
-#    [params.gitalk]
-#        owner = ""       # Your GitHub ID
-#        repo = ""        # The repo to store comments
-#        clientId = ""    # Your client ID
-#        clientSecret = "" # Your client secret
-
-#    [params.utterances]       # https://utteranc.es/
-#        owner = ""              # Your GitHub ID
-#        repo = ""               # The repo to store comments
-
-#    [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-#        owner = ""              # Your GitHub ID
-#        repo = ""               # The repo to store comments
-#        clientId = ""           # Your client ID
-#        clientSecret = ""       # Your client secret
