@@ -1,53 +1,49 @@
 baseURL = 'https://kobnar.github.io/'
 languageCode = 'en-us'
 title = 'Konrad R.K. Ludwig'
+paginate = 10
 
 [[module.imports]]
-    path = 'github.com/luizdepra/hugo-coder'
-    
-languagecode = "en"
-defaultcontentlanguage = "en"
+    path = 'github.com/Mitrichius/hugo-theme-anubis'
 
-paginate = 20
-
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-# See: https://github.com/luizdepra/hugo-coder/wiki/Configurations#theme-parameters
 [params]
-    author = "Konrad R.K. Ludwig"
-    info = "Data Analyst / Software Engineer"
-    avatarurl = "images/kobnar_avatar.jpg"
-    math = true
+    author = 'Konrad R.K. Ludwig'
+    email = 'konrad.rk.ludwig@gmail.com'
+    avatar = '/images/kobnar_avatar.jpg'
+    description = 'A personal site.'
+    style = 'dark-without-switcher'
+    paginationSinglePost = true
+    readMore = false
+    readNextPosts = 0
+    disableSummary = false
+    copyCodebutton = true
+    rssAsSocialIcon = true
 
-[taxonomies]
-    category = "categories"
-    series = "series"
-    tag = "tags"
-    author = "authors"
+    [[params.social]]
+        id = 'github'
+        name = 'kobnar'
 
-# Social links
-[[params.social]]
-    name = "Github"
-    icon = "fa fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/kobnar/"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fa fa-linkedin fa-2x"
+    [[params.social]]
+        id = 'linkedin'
+        name = 'konradrkludwig'
+
+[[menu.main]]
+    identifier = 'About'
+    name = 'About'
+    title = 'About'
+    url = '/about/'
     weight = 2
-    url = "https://linkedin.com/in/konradrkludwig/"
 
-# Menu links
 [[menu.main]]
-    name = "Posts"
+    identifier = 'References'
+    name = 'References'
+    title = 'References'
+    url = '/references/'
     weight = 1
-    url  = "posts/"
+
 [[menu.main]]
-    name = "References"
-    weight = 2
-    url = "references/"
-[[menu.main]]
-    name = "About"
-    weight = 3
-    url = "about/"
+    identifier = 'Posts'
+    name = 'Posts'
+    title = 'Posts'
+    url = '/posts/'
+    weight = 0
