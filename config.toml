@@ -41,7 +41,7 @@ title = "Konrad R.K. Ludwig"
         url = 'https://twitter.com/kobnar/'
 
 [taxonomies]
-#    category = "posts"
+    category = "categories"
     tag      = "tags"
     series   = "series"
 
