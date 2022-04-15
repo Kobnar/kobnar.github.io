@@ -24,6 +24,8 @@ series = []
     * Working with multiindexes
     * Locate the index value of a row matching conditions
     * Using `IndexSlice`
+* Math
+	* Set theory
 * Calculus
   * Method of Increments
   * Power rules
@@ -32,11 +34,10 @@ series = []
   * U-Substitution
   * Integration by parts
 * Probability & statistics:
+	* Introduction [IN PROGRESS]
   * Basic concepts:
-    * Combinations
-    * Permutations
-    * Groupings
-    * union/intersection/compliment/etc.
+    * Counting (combinations, permutations, etc.) [IN PROGRESS]
+    * Set theory (union, intersection, compliment, etc.) [IN PROGRESS]
     * Bayes' Law
   * Descriptive statistics:
     * Random variables
